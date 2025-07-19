@@ -166,3 +166,12 @@ console.log(a);
 // var n2 = 13;
 // console.log(n1 || n2); 
 // console.log(n1 || 0); 
+
+
+for (let i = 0; i < 4; i++) {
+    var s = "";
+    for (let j = 0; j <= i; j++) {
+        s+="* ";
+    }   
+    console.log(s);
+}
