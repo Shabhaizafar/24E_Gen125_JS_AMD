@@ -24,4 +24,4 @@
 
 // 3. alert :
 
-alert("Hello User !!");
+// alert("Hello User !!");
