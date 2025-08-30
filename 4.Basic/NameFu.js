@@ -73,3 +73,30 @@ d) With argument & with return type
 
 */
 
+// function ispalindrome(str){
+//     var revstr = "";
+//     for (let i = str.length-1; i >=0 ; i--) {
+//         revstr+=str[i];   //revstr = ""     //revstr = revstr+str[2] = ""+"j" = j
+//             //  revstr = revstr+str[1] = "j"+"a" = ja
+//             //  revstr = revstr+str[0] = "ja"+"r" = jar
+//     }
+//     if(revstr==str)
+//         return true;
+//     return false;
+// }
+
+// console.log(ispalindrome("madam"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
