@@ -74,8 +74,8 @@
 
 
 //----------------------------------
-var arr = [1,2,3,4,5];
-console.log("Array : ",arr);
+// var arr = [1,2,3,4,5];
+// console.log("Array : ",arr);
 
 
 // arr.reduce((previousvalue,currentvalue)=>{
@@ -84,15 +84,27 @@ console.log("Array : ",arr);
 // });
 
 
-var ans = arr.reduce((previousvalue,currentvalue)=>{
-    // console.log(previousvalue,currentvalue);
-    return currentvalue+previousvalue;
-});
-console.log(ans);
+// var ans = arr.reduce((previousvalue,currentvalue)=>{
+//     // console.log(previousvalue,currentvalue);
+//     return currentvalue+previousvalue;
+// });
+// console.log(ans);
 
 
+// ### 🔹 `fill()`
 
+// In an online quiz app, you want to show **10 unanswered questions** as `"Not Attempted"`.
+// Generate an array of length 10 pre-filled with `"Not Attempted"`.
 
+// var arr = "0123456789".split('').fill("Not Attempted");
+// console.log(arr);
+
+// var arr= [];
+// for (let i = 0; i < 10; i++) {
+//     arr.push('');
+// }
+// arr.fill("Not Attempted");
+// console.log(arr);
 
 
 /*
@@ -143,12 +155,7 @@ In a movie streaming app, the “Top Picks” section should only show the **fir
 
 ---
 
-### 🔹 `splice()`
 
-In a contacts list: `["John", "Emma", "Michael", "Sophia"]`,
-you want to remove `"Michael"` and add `"David"` instead.
-
----
 
 ### 🔹 `reduce()`
 
@@ -156,3 +163,29 @@ In an online shopping cart, item prices are `[1200, 800, 450, 150]`.
 Find the **total bill amount** using `reduce()`.
 
 */
+
+// ### 🔹 `splice()`
+
+// In a contacts list: `["John", "Emma", "Michael", "Sophia"]`,
+// you want to remove `"Michael"` and add `"David"` instead.
+
+var d = "Emma";
+var temp;
+var arr =["John", "Emma", "Michael", "Sophia","Royal"];
+console.log(arr);
+
+// console.log(arr.indexOf(d));
+
+for (let i = 0; i < arr.length; i++) {
+    if(d==arr[i]){
+        temp = i;
+        break;
+    }
+}
+
+var more =  arr.splice(temp).splice(1);
+arr.push("David",...more);
+
+console.log(arr);
+
+
